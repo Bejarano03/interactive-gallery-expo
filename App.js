@@ -22,7 +22,7 @@ export default function App() {
   const [index, setIndex] = useState(0);
 
   function handleClick() {
-    if(index<4){
+    if(index<3){
       setIndex(index + 1);
     }
     
