@@ -22,11 +22,17 @@ export default function App() {
   const [index, setIndex] = useState(0);
 
   function handleClick() {
-    setIndex(index + 1);
+    if(index<4){
+      setIndex(index + 1);
+    }
+    
   }
 
   function handleReverseClick() {
-    setIndex(index -1)
+    if(index>0){
+      setIndex(index -1)
+    }
+   
   }
 
   let photos = images[index];
